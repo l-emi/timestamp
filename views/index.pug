@@ -1,0 +1,23 @@
+doctype html 
+html(lang="en")
+    head
+        title Timestamp Microservice
+        link(rel='stylesheet', href='css/style.css')
+    body
+        div(class='container')
+
+            div(class='heading')
+                h1 Timestamp Microservice
+                p Enter a unix timestamp or natural date as a url parameter.
+
+            div(class='usage')
+                h2 Example usage:
+                h3 Unix:
+                code https://url.com/1450137600
+                br
+                h3 Natural date:
+                code https://url.com/December%2015,%202015
+
+            div(class='output')
+                h2 Example output:
+                code { "unix": 1450137600, "natural": "December 15, 2015" }
